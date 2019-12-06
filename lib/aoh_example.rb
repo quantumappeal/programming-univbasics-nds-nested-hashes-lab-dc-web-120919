@@ -16,14 +16,13 @@ def literal_aoh
   literal_aoh = [
     {:name=>"Don Gately",:occupation=>"Live-in Staff"}, {:name=>"Joelle van Dyne", :occupation=>"Radio Personality"
     ]
-  # Using Array literal syntax only, build a nested array that uses the data in
-  # held in the constants
 end
 
 def aoh_lookup(aoh, row, key)
+  assembled_aoh[0][:name]
 end
 
 def aoh_update(aoh, row, key, new_value)
-  # Update the AoH data at row and key to have the value of new_value
-  # Return the updated AoH
+  assembled_aoh[0] = { name: "DFW"}
+  assembled_aoh
 end
